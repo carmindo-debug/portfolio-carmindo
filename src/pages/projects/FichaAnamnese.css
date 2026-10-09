@@ -1,0 +1,516 @@
+/* =========================================================
+   FICHA DE ANAMNESE — HERO
+   ========================================================= */
+
+.project-case-hero {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  padding-block: var(--space-8);
+
+  display: flex;
+  justify-content: center;
+}
+
+.project-case-heading {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--space-3);
+
+  text-align: center;
+}
+
+.project-case-heading h1 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-display);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.project-case-heading p {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   VISÃO GERAL
+   ========================================================= */
+
+.project-overview {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+
+  padding-block: var(--space-4);
+}
+
+.project-overview-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-2);
+
+  padding-inline: var(--space-4);
+}
+
+.project-overview-item:first-child {
+  padding-left: 0;
+}
+
+.project-overview-item:last-child {
+  padding-right: 0;
+}
+
+.project-overview-item span {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+}
+
+.project-overview-item p {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-body-small);
+}
+/* =========================================================
+   DESAFIO + OBJETIVO
+   ========================================================= */
+
+.project-challenge-objective {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: var(--space-8);
+
+  padding-block: var(--space-8);
+}
+
+.project-challenge-objective-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-3);
+
+  max-width: 720px;
+}
+
+.project-challenge-objective-item h2 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-2);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.project-challenge-objective-item p {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PROCESSO
+   ========================================================= */
+
+.ficha-process {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  padding-block: var(--space-8);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+.ficha-process-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--space-3);
+
+  text-align: center;
+}
+
+.ficha-process-heading h2 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-3);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.ficha-process-heading p {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body-small);
+  line-height: 1.5;
+}
+
+.ficha-process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+.project-process-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-2);
+}
+
+.project-process-item > span {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+}
+
+.project-process-item h2 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-2);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.project-process-item p {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+/* =========================================================
+   DESTAQUES DA INTERFACE
+   ========================================================= */
+
+.ficha-highlights {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  padding-block: var(--space-8);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.ficha-highlights-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--space-3);
+
+  text-align: center;
+}
+
+.ficha-highlights-heading h2 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-3);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.ficha-highlights-heading p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body-small);
+  line-height: 1.5;
+}
+
+.ficha-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.ficha-highlight {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ficha-highlight span {
+  margin-bottom: var(--space-3);
+
+  color: var(--color-primary);
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+}
+
+.ficha-highlight-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin-bottom: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.ficha-highlight h3 {
+  margin: 0 0 var(--space-3);
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-body);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.ficha-highlight p {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body-small);
+  line-height: 1.5;
+}
+/* =========================================================
+   DESENVOLVIMENTO
+   ========================================================= */
+
+.ficha-development {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  padding-block: var(--space-8);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.ficha-development-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ficha-development-image img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.ficha-development-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--space-3);
+
+  text-align: center;
+}
+
+.ficha-development-heading h2 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-3);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.ficha-development-heading p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body-small);
+  line-height: 1.5;
+}
+
+.ficha-development-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.ficha-development-item {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ficha-development-item span {
+  margin-bottom: var(--space-3);
+
+  color: var(--color-primary);
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+}
+
+.ficha-development-item h3 {
+  margin: 0 0 var(--space-3);
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-body);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.ficha-development-item p {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body-small);
+  line-height: 1.5;
+}
+.project-showcase {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  padding-block: var(--space-8);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--space-6);
+}
+
+.project-showcase-content {
+  width: min(100%, 720px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--space-3);
+
+  text-align: center;
+}
+
+.project-showcase-label {
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-body-small);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-showcase h2 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-2);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.project-showcase p {
+  max-width: 640px;
+
+  margin: 0;
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+
+.project-showcase-image {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.project-showcase-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: var(--radius-md);
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   FICHA DE ANAMNESE — RESPONSIVIDADE MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .project-overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: var(--space-4);
+  }
+
+  .project-overview-item {
+    padding-inline: 0;
+    min-width: 0;
+  }
+
+  .project-challenge-objective {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .ficha-process-steps,
+  .ficha-highlights-grid,
+  .ficha-development-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .ficha-process-steps > *,
+  .ficha-highlights-grid > *,
+  .ficha-development-content > * {
+    min-width: 0;
+  }
+
+  .ficha-highlight-image {
+    aspect-ratio: 4 / 3;
+  }
+
+  .ficha-development-image img {
+    width: 100%;
+  }
+
+  .project-case-heading h1 {
+    font-size: var(--font-size-heading-2);
+  }
+}
