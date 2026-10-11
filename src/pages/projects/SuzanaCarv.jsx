@@ -8,109 +8,144 @@ import suzanaCarvProject from '../../assets/suzana-carv-project.png'
 function SuzanaCarv() {
   return (
     <main className="project-page">
-      <section className="project-case-hero">
-        <div className="project-case-heading">
-          <h1>Suzana Carv</h1>
+      
+<section className="project-case-hero suzana-case-hero">
+  <div className="project-case-heading suzana-case-heading">
+    <span className="suzana-case-eyebrow">
+      ESTUDO DE CASO · SITE INSTITUCIONAL
+    </span>
 
-          <p>UI/UX Design + Front-end Development</p>
+    <h1>Suzana Carv — Site Institucional</h1>
 
-          <span>Design → Desenvolvimento → Produto publicado</span>
-        </div>
+    <p>
+      Projeto que reúne design de interface no Figma e desenvolvimento
+      front-end em React para apresentar a marca e seus serviços.
+    </p>
 
-        <div className="project-case-image">
-          <img
-            src={suzanaCarvCaseHero}
-            alt="Case Hero do projeto Suzana Carv"
-          />
-        </div>
-      </section>
+    <span className="suzana-case-process">
+      Design → Desenvolvimento → Produto publicado
+    </span>
+  </div>
 
-      <section className="project-overview">
-        <div className="project-overview-item">
-          <span>PROJETO</span>
-          <p>Suzana Carv</p>
-        </div>
+  <div className="project-case-image">
+    <img
+      src={suzanaCarvCaseHero}
+      alt="Apresentação visual do site institucional da Suzana Carv"
+    />
+  </div>
+</section>
 
-        <div className="project-overview-item">
-          <span>ÁREA</span>
-          <p>UI/UX + Front-end</p>
-        </div>
 
-        <div className="project-overview-item">
-          <span>FERRAMENTAS</span>
-          <p>Figma · React · Vite</p>
-        </div>
+      
+<section className="project-overview suzana-case-overview">
+  <div className="suzana-case-overview-grid">
+    <div className="project-overview-item">
+      <span>PROJETO</span>
+      <p>Suzana Carv</p>
+    </div>
 
-        <div className="project-overview-item">
-          <span>TIPO</span>
-          <p>Site institucional</p>
-        </div>
-      </section>
+    <div className="project-overview-item">
+      <span>ÁREA</span>
+      <p>UI/UX + Front-end</p>
+    </div>
 
-      <section className="project-challenge">
-        <div className="project-challenge-item">
-          <h2>O desafio</h2>
+    <div className="project-overview-item">
+      <span>FERRAMENTAS</span>
+      <p>Figma · React · Vite</p>
+    </div>
 
-          <p>
-            Criar uma presença digital profissional para a marca Suzana Carv,
-            apresentando seus serviços de forma clara e valorizando sua
-            identidade visual.
-          </p>
-        </div>
+    <div className="project-overview-item">
+      <span>TIPO</span>
+      <p>Site institucional</p>
+    </div>
+  </div>
+</section>
 
-        <div className="project-challenge-item">
-          <h2>O objetivo</h2>
 
-          <p>
-            Desenvolver uma experiência digital clara, elegante e funcional,
-            valorizando a apresentação da marca e facilitando o contato e o
-            agendamento.
-          </p>
-        </div>
-      </section>
+      
+<section className="project-challenge suzana-case-challenge">
+  <div className="suzana-case-challenge-grid">
+    <article className="suzana-case-challenge-item">
+      <span className="suzana-case-section-label">
+        01 / DESAFIO
+      </span>
 
-      <section className="project-process">
-        <div className="project-process-heading">
-          <h2>Processo</h2>
+      <h2>Como apresentar a marca e seus serviços no ambiente digital?</h2>
 
-          <p>
-            Da definição visual ao desenvolvimento e publicação do produto.
-          </p>
-        </div>
+      <p>
+        Criar uma presença digital profissional para a marca Suzana Carv,
+        apresentando seus serviços de forma clara e valorizando sua
+        identidade visual.
+      </p>
+    </article>
 
-        <div className="project-process-steps">
-          <article className="project-process-step">
-            <span>01</span>
+    <article className="suzana-case-challenge-item">
+      <span className="suzana-case-section-label">
+        02 / OBJETIVO
+      </span>
 
-            <h3>Design</h3>
+      <h2>Uma experiência digital clara e funcional</h2>
 
-            <p>
-              Estrutura visual, identidade e experiência definidos no Figma.
-            </p>
-          </article>
+      <p>
+        Desenvolver uma experiência digital clara, elegante e funcional,
+        valorizando a apresentação da marca e facilitando o contato e o
+        agendamento.
+      </p>
+    </article>
+  </div>
+</section>
 
-          <article className="project-process-step">
-            <span>02</span>
 
-            <h3>Desenvolvimento</h3>
+      
+<section className="project-process suzana-case-process">
+  <div className="suzana-case-process-container">
+    <div className="project-process-heading suzana-case-process-heading">
+      <span className="suzana-case-section-label">
+        03 / PROCESSO DE DESENVOLVIMENTO
+      </span>
 
-            <p>
-              Interface transformada em produto funcional com React e
-              tecnologias front-end.
-            </p>
-          </article>
+      <h2>Do design à publicação</h2>
 
-          <article className="project-process-step">
-            <span>03</span>
+      <p>
+        Da definição visual ao desenvolvimento e publicação do produto.
+      </p>
+    </div>
 
-            <h3>Publicação</h3>
+    <div className="project-process-steps suzana-case-process-grid">
+      <article className="project-process-step">
+        <span>01</span>
 
-            <p>
-              Projeto finalizado, publicado e disponibilizado para uso.
-            </p>
-          </article>
-        </div>
-      </section>
+        <h3>Design</h3>
+
+        <p>
+          Estrutura visual, identidade e experiência definidos no Figma.
+        </p>
+      </article>
+
+      <article className="project-process-step">
+        <span>02</span>
+
+        <h3>Desenvolvimento</h3>
+
+        <p>
+          Interface transformada em produto funcional com React e
+          tecnologias front-end.
+        </p>
+      </article>
+
+      <article className="project-process-step">
+        <span>03</span>
+
+        <h3>Publicação</h3>
+
+        <p>
+          Projeto finalizado, publicado e disponibilizado para uso.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
             <section className="project-design">
         <div className="project-design-heading">
           <h2>Design</h2>

@@ -9,8 +9,12 @@ function FichaAnamnese() {
     <main className="project-page">
 
       {/* Hero */}
-<section className="project-case-hero">
-  <div className="project-case-heading">
+<section className="project-case-hero ficha-case-hero">
+  <div className="project-case-heading ficha-case-heading">
+    <span className="ficha-case-eyebrow">
+      ESTUDO DE CASO · APLICAÇÃO WEB
+    </span>
+
     <h1>Ficha de Anamnese</h1>
 
     <p>
@@ -30,101 +34,108 @@ function FichaAnamnese() {
 </section>
 
       {/* Visão geral */}
-      <section className="project-overview">
+      
+<section className="project-overview ficha-case-overview">
+  <div className="ficha-case-overview-grid">
+    <div className="project-overview-item">
+      <span>PROJETO</span>
+      <p>Ficha de Anamnese</p>
+    </div>
 
-        <div className="project-overview-item">
-          <span>PROJETO</span>
-          <p>Ficha de Anamnese</p>
-        </div>
+    <div className="project-overview-item">
+      <span>ÁREA</span>
+      <p>UI/UX + Front-end</p>
+    </div>
 
-        <div className="project-overview-item">
-          <span>ÁREA</span>
-          <p>UI/UX + Front-end</p>
-        </div>
+    <div className="project-overview-item">
+      <span>FERRAMENTAS</span>
+      <p>Figma · React · Vite</p>
+    </div>
 
-        <div className="project-overview-item">
-          <span>FERRAMENTAS</span>
-          <p>Figma · React · Vite</p>
-        </div>
+    <div className="project-overview-item">
+      <span>TIPO</span>
+      <p>Aplicação web</p>
+    </div>
+  </div>
+</section>
 
-        <div className="project-overview-item">
-          <span>TIPO</span>
-          <p>Aplicação web</p>
-        </div>
-
-      </section>
 
       {/* Desafio e objetivo */}
-<section className="project-challenge-objective">
+<section className="project-challenge-objective ficha-case-challenge">
+  <div className="ficha-case-challenge-grid">
+    <article className="ficha-case-challenge-item">
+      <span className="ficha-case-section-label">
+        01 / DESAFIO
+      </span>
 
-  <div className="project-challenge-objective-item">
-    <h2>O desafio</h2>
+      <h2>Como simplificar o preenchimento das fichas de anamnese?</h2>
 
-    <p>
-      Desenvolver uma aplicação web para facilitar o preenchimento,
-      organização e gerenciamento de fichas de anamnese de forma
-      clara, prática e profissional.
-    </p>
+      <p>
+        Desenvolver uma aplicação web para facilitar o preenchimento,
+        organização e gerenciamento de fichas de anamnese de forma
+        clara, prática e profissional.
+      </p>
+    </article>
+
+    <article className="ficha-case-challenge-item">
+      <span className="ficha-case-section-label">
+        02 / OBJETIVO
+      </span>
+
+      <h2>Uma experiência clara, prática e organizada</h2>
+
+      <p>
+        Criar uma experiência digital simples e funcional, permitindo
+        o preenchimento dos dados da cliente e o gerenciamento das
+        informações de forma organizada.
+      </p>
+    </article>
   </div>
-
-  <div className="project-challenge-objective-item">
-    <h2>O objetivo</h2>
-
-    <p>
-      Criar uma experiência digital simples e funcional, permitindo
-      o preenchimento dos dados da cliente e o gerenciamento das
-      informações de forma organizada.
-    </p>
-  </div>
-
 </section>
 
       {/* Processo */}
-<section className="ficha-process">
 
-  <div className="ficha-process-heading">
-    <h2>Processo</h2>
+<section className="ficha-process ficha-case-process">
+  <div className="ficha-process-heading ficha-case-process-heading">
+    <span className="ficha-case-section-label">
+      03 / PROCESSO DE DESENVOLVIMENTO
+    </span>
+
+    <h2>Da estrutura à publicação</h2>
 
     <p>
-      Da estrutura da aplicação ao desenvolvimento e publicação do produto.
+      Da organização das informações à implementação e publicação
+      da aplicação web.
     </p>
   </div>
 
-  <div className="ficha-process-steps">
-
-    <div className="project-process-item">
+  <div className="ficha-process-steps ficha-case-process-grid">
+    <article className="ficha-case-process-card">
       <span>01</span>
-
-      <h2>Estrutura</h2>
-
+      <h3>Estrutura</h3>
       <p>
         Organização das informações e definição da estrutura da aplicação.
       </p>
-    </div>
+    </article>
 
-    <div className="project-process-item">
+    <article className="ficha-case-process-card">
       <span>02</span>
-
-      <h2>Desenvolvimento</h2>
-
+      <h3>Desenvolvimento</h3>
       <p>
         Implementação da aplicação utilizando React e Vite.
       </p>
-    </div>
+    </article>
 
-    <div className="project-process-item">
+    <article className="ficha-case-process-card">
       <span>03</span>
-
-      <h2>Publicação</h2>
-
+      <h3>Publicação</h3>
       <p>
         Aplicação publicada e disponível para utilização.
       </p>
-    </div>
-
+    </article>
   </div>
-
 </section>
+
 {/* Destaques da interface */}
 <section className="ficha-highlights">
 
@@ -283,9 +294,16 @@ function FichaAnamnese() {
   target="_blank"
   rel="noopener noreferrer"
 >
-  Vamos conversar →
+  Vamos conversar pelo WhatsApp →
 </a>
 
+
+<p className="project-closing-email">
+  Prefere e-mail?{" "}
+  <a href="mailto:cvdesignerfrontend@gmail.com">
+    cvdesignerfrontend@gmail.com
+  </a>
+</p>
 
         </div>
 

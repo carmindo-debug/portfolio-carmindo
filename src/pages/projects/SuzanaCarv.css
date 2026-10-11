@@ -465,83 +465,107 @@ margin-inline: auto;
 .project-technologies {
   padding-bottom: var(--space-4);
 }
-.project-closing {
-  width: min(100% - 32px, var(--content-max-width));
-  margin-inline: auto;
 
-  padding-block: var(--space-6);
+.project-closing {
+  width: 100%;
+  margin: 0;
+  padding: clamp(64px, 9vw, 104px) 24px;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  gap: 0;
 
-  gap: var(--space-3);
+  background: var(--color-primary, #164A45);
+  color: #FFFFFF;
+  text-align: center;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
+
+
 
 .project-closing-content {
+  width: min(100%, 760px);
+  margin-inline: auto;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
 
-  gap: var(--space-3);
+  text-align: center;
 }
 
+
+
 .project-closing h2 {
+  max-width: 760px;
   margin: 0;
 
-  color: var(--color-text-primary);
-  font-size: var(--font-size-heading-2);
-  line-height: 1.25;
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
   font-weight: 600;
 }
 
+
+
 .project-closing p {
+  max-width: 650px;
   margin: 0;
 
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-body);
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  line-height: 1.8;
 }
+
+
 
 .project-closing-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  padding: 12px 20px;
+  min-height: 48px;
+  padding: 14px 24px;
 
-  border: 0;
-  border-radius: var(--radius-full);
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
 
-  color: var(--color-surface);
-  background: var(--color-primary);
+  background: #FFFFFF;
+  color: var(--color-primary, #164A45);
 
-  font-size: var(--font-size-body);
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   line-height: 1.2;
-
   text-decoration: none;
+  white-space: nowrap;
 
   transition:
-    background-color 0.2s ease,
-    transform 0.2s ease;
+    background-color 180ms ease,
+    transform 180ms ease;
 }
+
+
 
 .project-closing-button:hover {
-  color: var(--color-surface);
-  background: var(--color-primary-hover);
-
+  background: #F1F3F2;
+  color: var(--color-primary, #164A45);
   text-decoration: none;
-
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
+
 
 @media (max-width: 768px) {
   .project-closing {
-    width: min(100% - 32px, var(--content-max-width));
-
-    padding-block: var(--space-6);
-  }
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  box-sizing: border-box;
+  padding: var(--space-6) 18px;
+}
 
   .project-closing-content {
     max-width: 100%;
@@ -631,4 +655,312 @@ margin-inline: auto;
   padding-inline: 0;
 }
 }
+
+/* Abertura padronizada — Suzana Carv institucional */
+
+.suzana-case-hero {
+  padding-block: clamp(56px, 8vw, 96px);
+}
+
+.suzana-case-heading {
+  align-items: flex-start;
+  gap: var(--space-3);
+  text-align: left;
+}
+
+.suzana-case-eyebrow {
+  color: var(--color-primary, #164A45);
+  font-size: var(--font-size-caption);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.suzana-case-heading h1 {
+  max-width: 900px;
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.suzana-case-heading p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.suzana-case-process {
+  margin-top: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body-small);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .suzana-case-hero {
+    padding-block: var(--space-6);
+  }
+
+  .suzana-case-heading h1 {
+    font-size: clamp(2.25rem, 8vw, 3.2rem);
+  }
+
+  .suzana-case-heading p {
+    max-width: 100%;
+  }
+}
+
+/* Correção de prioridade — abertura Suzana Carv */
+
+.project-page .project-case-hero .suzana-case-heading {
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.project-page .project-case-hero .suzana-case-heading .suzana-case-eyebrow {
+  color: var(--color-primary, #164A45);
+  font-size: var(--font-size-caption);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.project-page .project-case-hero .suzana-case-heading h1 {
+  max-width: 900px;
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.project-page .project-case-hero .suzana-case-heading p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.project-page .project-case-hero .suzana-case-heading .suzana-case-process {
+  margin-top: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body-small);
+  line-height: 1.5;
+}
+
+/* Desafio e objetivo — padrão inspirado na página UI/UX */
+
+.project-page .project-challenge.suzana-case-challenge {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(64px, 8vw, 100px) 0;
+
+  display: block;
+  background: var(--color-background, #F7F7F5);
+}
+
+.project-page .suzana-case-challenge-grid {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(32px, 6vw, 80px);
+}
+
+.project-page .suzana-case-challenge-item {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.project-page .suzana-case-section-label {
+  color: var(--color-primary, #164A45);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.project-page .suzana-case-challenge-item h2 {
+  max-width: 600px;
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+
+.project-page .suzana-case-challenge-item p {
+  max-width: 600px;
+  margin: 0;
+
+  color: var(--color-text-secondary, #666666);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .project-page .project-challenge.suzana-case-challenge {
+    padding-block: 48px;
+  }
+
+  .project-page .suzana-case-challenge-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* Faixa de informações — padrão da página UI/UX */
+
+.project-page .project-overview.suzana-case-overview {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+  padding-block: 28px;
+
+  border-top: 1px solid var(--color-border, #E5E5E5);
+  border-bottom: 1px solid var(--color-border, #E5E5E5);
+
+  background: #FFFFFF;
+}
+
+.project-page .suzana-case-overview-grid {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-page .suzana-case-overview .project-overview-item {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+  padding-inline: 0;
+}
+
+.project-page .suzana-case-overview .project-overview-item span {
+  color: var(--color-text-secondary, #666666);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.project-page .suzana-case-overview .project-overview-item p {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .project-page .suzana-case-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+}
+
+/* Processo de desenvolvimento — padrão visual UI/UX */
+
+.project-page .project-process.suzana-case-process {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(64px, 8vw, 100px) 0;
+  background: #FFFFFF;
+}
+
+.project-page .suzana-case-process-container {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+}
+
+.project-page .project-process-heading.suzana-case-process-heading {
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.project-page .suzana-case-process-heading h2 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+
+.project-page .suzana-case-process-heading p {
+  max-width: 650px;
+  margin: 0;
+  color: var(--color-text-secondary, #666666);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.project-page .suzana-case-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-page .suzana-case-process .project-process-step {
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid #E5E5E5;
+  border-radius: 12px;
+  background: #F7F7F5;
+}
+
+.project-page .suzana-case-process .project-process-step > span {
+  color: var(--color-primary, #164A45);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.project-page .suzana-case-process .project-process-step h3 {
+  margin: 20px 0 12px;
+  color: var(--color-text-primary);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.project-page .suzana-case-process .project-process-step p {
+  margin: 0;
+  color: var(--color-text-secondary, #666666);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .project-page .suzana-case-process-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+
+
 
