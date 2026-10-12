@@ -140,6 +140,9 @@ function FichaAnamnese() {
 <section className="ficha-highlights">
 
   <div className="ficha-highlights-heading">
+    <span className="ficha-case-section-label">
+  04 / DESTAQUES DA INTERFACE
+</span>
     <h2>Destaques da interface</h2>
 
     <p>
@@ -210,6 +213,9 @@ function FichaAnamnese() {
 <section className="ficha-development">
 
   <div className="ficha-development-heading">
+  <span className="ficha-case-section-label">
+  05 / DESENVOLVIMENTO
+</span>
     <h2>Desenvolvimento</h2>
 
     <p>
@@ -264,17 +270,23 @@ function FichaAnamnese() {
 
 </section>
       {/* Tecnologias */}
-      <section className="project-technologies">
+      
+<section className="project-technologies ficha-case-technologies">
+  <div className="ficha-case-technologies-container">
+    <span className="ficha-case-technologies-label">
+      06 / TECNOLOGIAS
+    </span>
 
-        <h3>Tecnologias</h3>
+    <h2>Tecnologias utilizadas</h2>
 
-        <div className="project-technologies-list">
-          <span>React</span>
-          <span>Vite</span>
-          <span>JavaScript</span>
-        </div>
+    <div className="project-technologies-list ficha-case-technology-list">
+      <span>React</span>
+      <span>Vite</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+</section>
 
-      </section>
 
       {/* Encerramento */}
       <section className="project-closing">

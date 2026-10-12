@@ -218,34 +218,48 @@ function SuzanaCarv() {
         </div>
       </section>
 
-      <section className="project-development">
-        <div className="project-development-heading">
-          <h2>Desenvolvimento</h2>
+      
+<section className="project-development">
+  
+<div className="project-development-heading">
+  <span className="suzana-case-section-label">
+    04 / DESENVOLVIMENTO
+  </span>
 
-          <p>
-            Após a definição visual, o projeto foi desenvolvido em React,
-            transformando a interface em uma experiência digital funcional e responsiva.
-          </p>
-        </div>
+  <h2>Desenvolvimento</h2>
 
-        <div className="project-development-showcase">
-          <img
-            src={suzanaCarvProject}
-            alt="Showcase do desenvolvimento do projeto Suzana Carv"
-          />
-        </div>
+  <p>
+    Após a definição visual, o projeto foi desenvolvido em React,
+    transformando a interface em uma experiência digital funcional e responsiva.
+  </p>
+</div>
 
-        <div className="project-technologies">
-          <h3>Tecnologias</h3>
 
-          <div className="project-technologies-list">
-            <span>React</span>
-            <span>Vite</span>
-            <span>Bootstrap</span>
-            <span>JavaScript</span>
-          </div>
-        </div>
-        </section>
+  <div className="project-development-showcase">
+    <img
+      src={suzanaCarvProject}
+      alt="Showcase do desenvolvimento do projeto Suzana Carv"
+    />
+  </div>
+</section>
+
+<section className="project-technologies suzana-case-technologies">
+  <div className="suzana-case-technologies-container">
+    <span className="suzana-case-section-label">
+      05 / TECNOLOGIAS
+    </span>
+
+    <h2>Tecnologias utilizadas</h2>
+
+    <div className="project-technologies-list suzana-case-technology-list">
+      <span>React</span>
+      <span>Vite</span>
+      <span>Bootstrap</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+</section>
+
         
         <div className="project-closing">
   <div className="project-closing-content">

@@ -223,34 +223,32 @@
   gap: var(--space-7);
 }
 
+
 .ficha-highlights-heading {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  gap: var(--space-3);
-
-  text-align: center;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
 }
 
 .ficha-highlights-heading h2 {
   margin: 0;
-
   color: var(--color-text-primary);
-  font-size: var(--font-size-heading-3);
-  line-height: 1.25;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
   font-weight: 600;
 }
 
 .ficha-highlights-heading p {
-  max-width: 760px;
-
+  max-width: 650px;
   margin: 0;
-
   color: var(--color-text-secondary);
-  font-size: var(--font-size-body-small);
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.8;
 }
+
 
 .ficha-highlights-grid {
   display: grid;
@@ -331,34 +329,32 @@
   border-radius: var(--radius-md);
 }
 
+
 .ficha-development-heading {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  gap: var(--space-3);
-
-  text-align: center;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
 }
 
 .ficha-development-heading h2 {
   margin: 0;
-
   color: var(--color-text-primary);
-  font-size: var(--font-size-heading-3);
-  line-height: 1.25;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
   font-weight: 600;
 }
 
 .ficha-development-heading p {
-  max-width: 760px;
-
+  max-width: 650px;
   margin: 0;
-
   color: var(--color-text-secondary);
-  font-size: var(--font-size-body-small);
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.8;
 }
+
 
 .ficha-development-content {
   display: grid;
@@ -803,5 +799,66 @@
   .project-page .ficha-case-process-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Tecnologias — padrão visual da página UI/UX */
+
+.project-page .project-technologies.ficha-case-technologies {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-block: clamp(64px, 8vw, 100px);
+  box-sizing: border-box;
+
+  border-top: 1px solid var(--color-border, #E5E5E5);
+  background: var(--color-surface, #FFFFFF);
+}
+
+.project-page .ficha-case-technologies-container {
+  width: min(100% - 32px, var(--content-max-width));
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-page .ficha-case-technologies-label {
+  color: var(--color-primary, #164A45);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.project-page .ficha-case-technologies h2 {
+  margin: 16px 0 28px;
+  color: var(--color-text-primary, #171717);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+
+.project-page .ficha-case-technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-page .ficha-case-technology-list span {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+
+  border: 1px solid var(--color-border, #E5E5E5);
+  border-radius: 999px;
+  background: var(--color-background, #F7F7F5);
+
+  color: var(--color-text-secondary, #666666);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 

@@ -28,7 +28,7 @@ function SuzanaCarvUIUX() {
   <div className="uiux-case-container">
     <div className="uiux-case-showcase-heading">
       <span className="uiux-case-section-label">
-        TELA 01 · BLOG
+        TELA — BLOG
       </span>
 
       <h2>Design da página do blog</h2>
@@ -58,7 +58,7 @@ function SuzanaCarvUIUX() {
   <div className="uiux-case-container">
     <div className="uiux-case-showcase-heading">
       <span className="uiux-case-section-label">
-        TELA 02 · QUEM SOU
+        TELA — QUEM SOU
       </span>
 
       <h2>Apresentação da profissional</h2>
@@ -89,7 +89,7 @@ function SuzanaCarvUIUX() {
   <div className="uiux-case-container">
     <div className="uiux-case-showcase-heading">
       <span className="uiux-case-section-label">
-        TELA 03 · PROCEDIMENTOS
+        TELA — PROCEDIMENTOS
       </span>
 
       <h2>Apresentação dos procedimentos</h2>
@@ -121,7 +121,7 @@ function SuzanaCarvUIUX() {
   <div className="uiux-case-container">
     <div className="uiux-case-showcase-heading">
       <span className="uiux-case-section-label">
-        TELA 04 · BLOG E CONTATO
+       TELA — BLOG E CONTATO
       </span>
 
       <h2>Conteúdo e canais de comunicação</h2>

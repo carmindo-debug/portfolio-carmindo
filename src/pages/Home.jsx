@@ -80,7 +80,7 @@ function Home() {
     </article>
   </div>
 </section>
-<section className="section selected-projects-section">
+<section id="projetos" className="section selected-projects-section">
   <div className="container">
     <div className="section-heading">
       <h2>Projetos selecionados</h2>
@@ -164,7 +164,7 @@ function Home() {
     </div>
   </div>
 </section>
-      <section className="section services-section">
+      <section id="servicos" className="section services-section">
   <div className="container">
     <div className="section-heading">
       <h2>Serviços</h2>
@@ -216,7 +216,7 @@ function Home() {
   </div>
 </section>
 
-      <section className="section about-section">
+      <section id="sobre" className="section about-section">
   <div className="container about-container">
     <div className="about-content">
       <h2>Sobre mim</h2>
