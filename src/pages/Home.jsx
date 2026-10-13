@@ -269,9 +269,13 @@ function Home() {
 
     <p className="contact-email">
       Prefere e-mail?{" "}
-      <a href="mailto:cvdesignerfrontend@gmail.com">
-        cvdesignerfrontend@gmail.com
-      </a>
+     <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=cvdesignerfrontend@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  cvdesignerfrontend@gmail.com
+</a>
     </p>
   </div>
 </section>
