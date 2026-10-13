@@ -1,10 +1,10 @@
 import './SuzanaCarv.css'
-import suzanaCarvCaseHero from '../../assets/suzana-carv-case-hero.png'
-import suzanaCarvDesignShowcase from '../../assets/suzana-carv-design-showcase.png'
-import suzanaCarvHighlight01 from '../../assets/suzana-carv-highlight-01.png'
-import suzanaCarvHighlight02 from '../../assets/suzana-carv-highlight-02.png'
-import suzanaCarvHighlight03 from '../../assets/suzana-carv-highlight-03.png'
-import suzanaCarvProject from '../../assets/suzana-carv-project.png'
+import suzanaCarvCaseHero from '../../assets/suzana-carv-case-hero.webp'
+import suzanaCarvDesignShowcase from '../../assets/suzana-carv-design-showcase.webp'
+import suzanaCarvHighlight01 from '../../assets/suzana-carv-highlight-01.webp'
+import suzanaCarvHighlight02 from '../../assets/suzana-carv-highlight-02.webp'
+import suzanaCarvHighlight03 from '../../assets/suzana-carv-highlight-03.webp'
+import suzanaCarvProject from '../../assets/suzana-carv-project.webp'
 function SuzanaCarv() {
   return (
     <main className="project-page">
@@ -148,6 +148,9 @@ function SuzanaCarv() {
 
             <section className="project-design">
         <div className="project-design-heading">
+          <span className="suzana-case-section-label">
+  04 / DESIGN
+</span>
           <h2>Design</h2>
 
           <p>
@@ -159,6 +162,7 @@ function SuzanaCarv() {
           <img
             src={suzanaCarvDesignShowcase}
             alt="Showcase do projeto Suzana Carv"
+            loading="lazy"
           />
         </div>
 
@@ -183,6 +187,7 @@ function SuzanaCarv() {
             <img
               src={suzanaCarvHighlight01}
               alt="Tela Quem sou? do projeto Suzana Carv"
+              loading="lazy"
             />
           </article>
 
@@ -198,6 +203,7 @@ function SuzanaCarv() {
             <img
               src={suzanaCarvHighlight02}
               alt="Tela Sala de Atendimento do projeto Suzana Carv"
+              loading="lazy"
             />
           </article>
 
@@ -223,7 +229,7 @@ function SuzanaCarv() {
   
 <div className="project-development-heading">
   <span className="suzana-case-section-label">
-    04 / DESENVOLVIMENTO
+    05 / DESENVOLVIMENTO
   </span>
 
   <h2>Desenvolvimento</h2>
@@ -239,6 +245,7 @@ function SuzanaCarv() {
     <img
       src={suzanaCarvProject}
       alt="Showcase do desenvolvimento do projeto Suzana Carv"
+      loading="lazy"
     />
   </div>
 </section>
@@ -246,7 +253,7 @@ function SuzanaCarv() {
 <section className="project-technologies suzana-case-technologies">
   <div className="suzana-case-technologies-container">
     <span className="suzana-case-section-label">
-      05 / TECNOLOGIAS
+      06 / TECNOLOGIAS
     </span>
 
     <h2>Tecnologias utilizadas</h2>

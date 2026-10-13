@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import Home from './pages/Home'
 import Header from './components/Header'
@@ -44,10 +44,10 @@ function App() {
   <Routes>
     <Route path="/" element={<Home />} />
 
-    <Route path="/sobre" element={<div>Sobre</div>} />
-    <Route path="/servicos" element={<div>Serviços</div>} />
-    <Route path="/projetos" element={<div>Projetos</div>} />
-    <Route path="/contato" element={<div>Contato</div>} />
+    <Route path="/sobre" element={<Navigate to="/#sobre" replace />} />
+<Route path="/servicos" element={<Navigate to="/#servicos" replace />} />
+<Route path="/projetos" element={<Navigate to="/#projetos" replace />} />
+<Route path="/contato" element={<Navigate to="/#contato" replace />} />
 
     <Route
   path="/projetos/suzana-carv"

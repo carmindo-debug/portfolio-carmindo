@@ -1,9 +1,9 @@
 
 import './FakeStore.css'
 
-import fakeStoreCatalogo from '../../assets/fake-store-catalogo.png'
-import fakeStoreCategorias from '../../assets/fake-store-categorias.png'
-import fakeStoreCatalogoCategoria from '../../assets/fake-store-catalogo-categoria.png'
+import fakeStoreCatalogo from '../../assets/fake-store-catalogo.webp'
+import fakeStoreCategorias from '../../assets/fake-store-categorias.webp'
+import fakeStoreCatalogoCategoria from '../../assets/fake-store-catalogo-categoria.webp'
 
 function FakeStore() {
   return (

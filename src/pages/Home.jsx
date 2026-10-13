@@ -39,7 +39,7 @@ function Home() {
   </div>
 </section>
 
-      <section id="projetos" className="section featured-project-section">
+      <section id="projeto-em-destaque" className="section featured-project-section">
   <div className="container">
     <div className="section-heading">
       <h2>Projeto em destaque</h2>
@@ -54,6 +54,7 @@ function Home() {
         <img
           src={suzanaCarvProject}
           alt="Preview do projeto Suzana Carv"
+          loading="lazy"
         />
       </div>
 
@@ -92,6 +93,7 @@ function Home() {
           <img
             src={fichaAnamneseProject}
             alt="Preview do projeto Ficha de Anamnese"
+            loading="lazy"
           />
         </div>
 
@@ -117,6 +119,7 @@ function Home() {
           <img
             src={fakeStoreProject}
             alt="Preview do projeto Fake Store"
+            loading="lazy"
           />
         </div>
 

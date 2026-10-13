@@ -237,29 +237,29 @@ margin-inline: auto;
 .project-design-heading {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 
   gap: var(--space-3);
 
-  text-align: center;
+  text-align: left;
 }
 
 .project-design-heading h2 {
   margin: 0;
-
   color: var(--color-text-primary);
-  font-size: var(--font-size-heading-2);
-  line-height: 1.25;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
   font-weight: 600;
 }
 
 .project-design-heading p {
-  max-width: 760px;
+  max-width: 650px;
   margin: 0;
 
   color: var(--color-text-secondary);
-  font-size: var(--font-size-body-small);
-  line-height: 1.5;
+  font-size: var(--font-size-body);
+  line-height: 1.8;
 }
 
 .project-design-showcase {
@@ -455,7 +455,7 @@ margin-inline: auto;
   padding: 8px 16px;
 
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-full);
+  border-radius: 999px;
 
   color: var(--color-text-secondary);
   background: var(--color-surface);

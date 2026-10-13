@@ -3,7 +3,7 @@ import fichaAnamneseProject from "../../assets/ficha-anamnese-project.png";
 import dadosPessoaisImage from "../../assets/Dados Pessoais Image.png";
 import historicoEsteticoImage from "../../assets/Histórico Estético Image.png";
 import assinaturaImage from "../../assets/Assinatura Image.png";
-import anamneseAvaliacaoImage from "../../assets/Anamnese e Avaliacao.png";
+import anamneseAvaliacaoImage from "../../assets/Anamnese e Avaliacao.webp";
 function FichaAnamnese() {
   return (
     <main className="project-page">
@@ -161,6 +161,7 @@ function FichaAnamnese() {
     className="ficha-highlight-image"
     src={dadosPessoaisImage}
     alt="Tela de preenchimento dos dados pessoais da cliente"
+    loading="lazy"
   />
 
   <h3>Preenchimento estruturado</h3>
@@ -178,6 +179,7 @@ function FichaAnamnese() {
     className="ficha-highlight-image"
     src={assinaturaImage}
     alt="Tela de registro da assinatura digital da cliente"
+    loading="lazy"
   />
 
   <h3>Assinatura digital</h3>
@@ -195,6 +197,7 @@ function FichaAnamnese() {
     className="ficha-highlight-image"
     src={historicoEsteticoImage}
     alt="Tela de histórico estético da cliente"
+    loading="lazy"
   />
 
   <h3>Gestão das informações</h3>
@@ -228,6 +231,7 @@ function FichaAnamnese() {
   <img
     src={anamneseAvaliacaoImage}
     alt="Tela de avaliação da aplicação Ficha de Anamnese"
+    loading="lazy"
   />
 </div>
 

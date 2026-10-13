@@ -1,9 +1,9 @@
 
 import "./SuzanaCarvUIUX.css";
-import suzanaCarvUIUXHero from "../../assets/suzana-carv-uiux-hero.png";
-import suzanaCarvUIUXSections1 from "../../assets/suzana-carv-uiux-sections1.png";
-import suzanaCarvUIUXSections2 from "../../assets/suzana-carv-uiux-sections2.png";
-import suzanaCarvUIUXBlogContact from "../../assets/suzana-carv-uiux-blog-contact.png";
+import suzanaCarvUIUXHero from "../../assets/suzana-carv-uiux-hero.webp";
+import suzanaCarvUIUXSections1 from "../../assets/suzana-carv-uiux-sections1.webp";
+import suzanaCarvUIUXSections2 from "../../assets/suzana-carv-uiux-sections2.webp";
+import suzanaCarvUIUXBlogContact from "../../assets/suzana-carv-uiux-blog-contact.webp";
 function SuzanaCarvUIUX() {
   return (
     <main className="uiux-case-page">
@@ -74,6 +74,7 @@ function SuzanaCarvUIUX() {
         <img
           src={suzanaCarvUIUXSections1}
           alt="Tela Quem sou do projeto Suzana Carv, com fotografia da profissional e texto sobre sua trajetória e propósito."
+          loading="lazy"
         />
       </div>
 
@@ -106,6 +107,7 @@ function SuzanaCarvUIUX() {
         <img
           src={suzanaCarvUIUXSections2}
           alt="Tela de procedimentos do projeto Suzana Carv, com título em destaque, texto de apresentação e fotografia."
+          loading="lazy"
         />
       </div>
 
