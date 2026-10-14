@@ -16,7 +16,9 @@ function FakeStore() {
               ESTUDO DE CASO · E-COMMERCE
             </span>
 
-            <h1>Fake Store — E-commerce</h1>
+            <h1>
+  Fake Store – <span className="fake-store-title-nowrap">E-commerce</span>
+</h1>
 
             <p>
               Aplicação de e-commerce desenvolvida em React, com produtos
